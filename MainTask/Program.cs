@@ -33,3 +33,18 @@ int SearchStringWithSizeLessOrEqual3(string[] stringArray)
   }
   return numberOfString;
 }
+
+string[] CreatArrayWithSizeLessOrEqual3(string[] stringArray, int sizeNewArray)
+{
+  string[] newStringArray = new string[sizeNewArray];
+  int j = 0;
+  for (int i = 0; i < stringArray.Length; i++)
+  {
+    if (stringArray[i].Length < 4)
+    {
+      newStringArray[j] = stringArray[i];
+      j++; 
+    }
+  }
+  return newStringArray;
+}
