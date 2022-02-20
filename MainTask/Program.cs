@@ -20,3 +20,16 @@ void PrintStringArray(string[] stringArray)
   }
   Write("]");
 }
+
+int SearchStringWithSizeLessOrEqual3(string[] stringArray)
+{
+  int numberOfString = 0;
+  for (int i = 0; i < stringArray.Length; i++)
+  {
+    if (stringArray[i].Length < 4)
+    {
+      numberOfString++;
+    }
+  }
+  return numberOfString;
+}
