@@ -5,7 +5,7 @@
 
 using static System.Console;
 
-string[] stringArray = { "hello", "world", "2", ":-)" };
+string[] stringArray = { "world", ":-)", "happy", "GB", "&", "7777", "co" };
 
 void PrintStringArray(string[] stringArray)
 {
@@ -43,14 +43,14 @@ string[] CreatArrayWithSizeLessOrEqual3(string[] stringArray, int sizeNewArray)
     if (stringArray[i].Length < 4)
     {
       newStringArray[j] = stringArray[i];
-      j++; 
+      j++;
     }
   }
   return newStringArray;
 }
 
 PrintStringArray(stringArray);
-int sizeNewArray = SearchStringWithSizeLessOrEqual3(stringArray); 
-string[] newStringArray = CreatArrayWithSizeLessOrEqual3(stringArray, sizeNewArray); 
+int sizeNewArray = SearchStringWithSizeLessOrEqual3(stringArray);
+string[] newStringArray = CreatArrayWithSizeLessOrEqual3(stringArray, sizeNewArray);
 Write(" --> ");
 PrintStringArray(newStringArray);
